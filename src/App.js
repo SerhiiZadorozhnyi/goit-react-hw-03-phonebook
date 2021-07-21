@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import {uuid} from 'uuidv4';
+// import {uuid} from 'uuidv4';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Filter from 'components/Filter/Filter';
 import ContactList from 'components/ContactList/ContactList';
 import './App.css';
+import { v4 as uuid_v4 } from "uuid";
 
 class App extends Component {
 
@@ -17,9 +18,24 @@ class App extends Component {
     filter: '',
   }
 
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contacts);
+
+    if (parsedContacts) {
+      this.setState({contacts: parsedContacts});
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
   addContact = (name, number) => {
     const newContact = {
-      id: uuid(),
+      id: uuid_v4(),
       name,
       number,
     };
