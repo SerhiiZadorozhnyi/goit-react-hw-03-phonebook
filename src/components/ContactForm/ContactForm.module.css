@@ -1,0 +1,30 @@
+.buttonForm {
+    margin-top: 10px;
+    background-color: #005A9E;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttonForm:hover {
+    background-color: #196AA7;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 10px 0px;
+}
+
+input {
+    border-radius: 5px;
+    border-color: #E6E6E6;
+    padding: 2px 6px;
+    border-style: double;
+}
+
+input:focus {   
+    border-color: #005A9E;
+    outline: #005A9E;
+}

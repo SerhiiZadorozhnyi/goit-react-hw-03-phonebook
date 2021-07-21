@@ -1,0 +1,49 @@
+.contactList {
+    margin: 0 auto;
+    max-width: 300px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.contactListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: F2F2F2;
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.contactListItem:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+    padding-right: 5px;
+}
+
+button {
+    background-color: #005A9E;
+    background-position: center;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    font-size: 16px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    background-color: #196AA7;
+    cursor: pointer;
+    fill: red;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
