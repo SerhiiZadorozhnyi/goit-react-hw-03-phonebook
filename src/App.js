@@ -69,11 +69,11 @@ class App extends Component {
       <>
         <div className="Container">
           <section title="Phonebook" className="Section">
-            <h1>Phonebook</h1>
+            <h1 className="bigText">Phonebook</h1>
             <ContactForm contacts={contacts} onAddContact={this.addContact}/>
           </section>
           <section title="Contacts" className="Section">
-            <h2>Contacts</h2>
+            <h2 className="bigText">Contacts</h2>
             <Filter value={filter} onChangeFilter={this.handleChangeFilter}/>
             <ContactList filteredContacts={this.getFilteredContacts()} onRemove={this.handleRemove} />
           </section>

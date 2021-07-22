@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ContactList.module.css';
-import './sprite.svg';
-
 
 const ContactListItem = ({name, number, onClickRemove}) => {
     return (
@@ -10,7 +8,7 @@ const ContactListItem = ({name, number, onClickRemove}) => {
             <p>{name}: {number}</p>
             <button 
                 type="button" 
-                className={styles.contactList} 
+                className={styles.contactListButton} 
                 onClick={onClickRemove}
             >
                 Delete

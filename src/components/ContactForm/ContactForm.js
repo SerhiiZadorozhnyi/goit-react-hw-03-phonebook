@@ -39,9 +39,9 @@ export default class ContactForm extends Component {
         const {name, number} = this.state;
         return (
             <form onSubmit={this.handleSubmit}>
-                <h3>Name</h3>
+                <h3 className={styles.text}>Name</h3>
                 <label><input type="text" value={name} onChange={e => this.handleChange('name', e)} /></label><br/>
-                <h3>Number</h3>
+                <h3 className={styles.text}>Number</h3>
                 <label><input type="tel" value={number} onChange={e => this.handleChange('number', e)} /></label><br/>
                 <button type="submit" className={styles.buttonForm}>Add contact</button>
             </form>
