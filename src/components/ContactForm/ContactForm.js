@@ -43,7 +43,9 @@ export default class ContactForm extends Component {
                 <label><input type="text" value={name} onChange={e => this.handleChange('name', e)} /></label><br/>
                 <h3 className={styles.text}>Number</h3>
                 <label><input type="tel" value={number} onChange={e => this.handleChange('number', e)} /></label><br/>
-                <button type="submit" className={styles.buttonForm}>Add contact</button>
+                <div className={styles.divButton}>
+                    <button type="submit" className={styles.buttonForm}>Add contact</button>
+                </div>
             </form>
         )
     }

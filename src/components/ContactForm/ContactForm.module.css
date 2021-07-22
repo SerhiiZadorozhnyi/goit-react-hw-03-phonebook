@@ -50,3 +50,8 @@ input:focus {
 .text {
     margin: 0;
 }
+
+.divButton {
+    display: flex;
+    justify-content: center;
+}
